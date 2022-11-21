@@ -5,14 +5,14 @@
       "conteudo": "Que bom que você veio",
       "autoria": "Queixo",
       "modelo": "modelo1",
-      "favorito": false
+      "favorito": true
     },
     {
       "id": 2,
       "conteudo": "Teste do modelo 2",
       "autoria": "Dev 2",
       "modelo": "modelo2",
-      "favorito": true
+      "favorito": false
     },
     {
       "id": 3,
@@ -32,7 +32,7 @@
       "conteudo": "aaaaaaaaaa",
       "autoria": "aaaaaaaaaaaaa",
       "modelo": "modelo1",
-      "favorito": false,
+      "favorito": true,
       "id": 5
     }
   ]
