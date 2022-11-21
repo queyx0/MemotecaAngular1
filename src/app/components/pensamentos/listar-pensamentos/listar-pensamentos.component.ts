@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Pensamento } from '../pensamento';
 import { PensamentoService } from '../pensamento.service';
 
@@ -41,6 +42,16 @@ export class ListarPensamentosComponent implements OnInit {
       .listar(this.paginaAtual, this.filtro)
       .subscribe((listaPensamentos) => {
         this.listaPensamentos = listaPensamentos;
+      });
+  }
+
+  listarFavoritos() {
+    this.haMaisPensamentos = true;
+    this.paginaAtual = 1;
+    this.service
+      .listarPensamentosFavoritos(this.paginaAtual, this.filtro)
+      .subscribe((listaPensamentosFavoritos) => {
+        this.listaPensamentos = listaPensamentosFavoritos;
       });
   }
 }
